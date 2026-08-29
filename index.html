@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A little corner of the internet made for someone special.">
+  <title>NAME — a little corner of the internet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-brand" id="loaderBrand">NAME / 00.00</div>
+      <div class="loader-track"><span id="bar"></span></div>
+      <div class="loader-meta"><span>building the archive</span><b id="pct">00%</b></div>
+    </div>
+  </div>
+
+  <div id="site" style="visibility:hidden">
+    <div class="grain"></div>
+    <div class="progress"><span></span></div>
+
+    <header class="top">
+      <a class="brand" href="#home" id="brand">NAME <small>/ 02.10</small></a>
+      <div class="mini">
+        <button id="play" aria-label="Play or pause music">▶</button>
+        <div class="mini-track"><span id="fill"></span></div>
+        <div class="mini-song"><small>FAVOURITES</small><strong id="now">select a song</strong></div>
+        <button id="next" aria-label="Next song">↗</button>
+      </div>
+    </header>
+
+    <nav class="side" aria-label="Page navigation">
+      <a href="#home" data-label="HOME"><b></b></a>
+      <a href="#archive" data-label="ARCHIVE"><b></b></a>
+      <a href="#films" data-label="FILMS"><b></b></a>
+      <a href="#people" data-label="PEOPLE"><b></b></a>
+      <a href="#thoughts" data-label="THOUGHTS"><b></b></a>
+      <a href="#about" data-label="MADE BY ME"><b></b></a>
+    </nav>
+
+    <main>
+      <section id="home" class="hero section">
+        <video id="heroVideo" autoplay muted loop playsinline preload="auto">
+          <source src="media/hero/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+          <p class="eyebrow" id="heroEyebrow"></p>
+          <h1 id="heroTitle"></h1>
+          <p class="hero-note" id="heroSubtitle"></p>
+          <a class="begin" href="#archive">↓ &nbsp; start here</a>
+        </div>
+        <div class="hero-bottom"><span>NO AUDIO / HERO FILM</span><span>SCROLL TO EXPLORE</span></div>
+      </section>
+
+      <section id="archive" class="section pad">
+        <div class="kicker">02 / THE ARCHIVE</div>
+        <div class="heading">
+          <h2>The moments<br>I didn't want<br>to <em>lose.</em></h2>
+          <p id="archiveDescription"></p>
+        </div>
+        <div class="gallery">
+          <div class="gallery-meta"><span>MEMORY INDEX</span><span>DRAG / SWIPE</span></div>
+          <div class="gallery-row" id="photoGallery"></div>
+        </div>
+      </section>
+
+      <section id="films" class="section pad films">
+        <div class="kicker">03 / MOVING MEMORIES</div>
+        <div class="film-head">
+          <h2>Some things<br>are better<br>when they <em>move.</em></h2>
+          <p>Hover to wake a video. Use the sound icon for audio. Use ↗ for the full-screen experience.</p>
+        </div>
+        <div class="film-grid" id="videoGrid"></div>
+      </section>
+
+      <section class="music section">
+        <div class="music-inner">
+          <div class="kicker">04 / THE SOUNDTRACK</div>
+          <h2>your  favourite<br>songs, in one <em>place.</em></h2>
+          <div class="songs" id="songList"></div>
+          <audio id="audio"></audio>
+        </div>
+      </section>
+
+      <section id="people" class="section pad people">
+        <div class="kicker">05 / THE PEOPLE</div>
+        <h2>Click a chapter.<br>Meet the <em>people.</em></h2>
+        <div class="people-grid" id="peopleGrid"></div>
+      </section>
+
+      <section id="thoughts" class="section pad thoughts">
+        <div class="kicker">06 / A FEW THOUGHTS</div>
+        <div class="thought-inner">
+          <p class="thought">If I had to describe NAME without using the obvious words, I'd probably start with...</p>
+          <p class="type" id="type"></p>
+          <p class="muted" id="thoughtDescription"></p>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="about-inner">
+          <div class="kicker">07 / BUILD NOTES</div>
+          <h2>Made by me.<br>Built from <em>scratch.</em></h2>
+          <p id="aboutText"></p>
+
+          <div class="build-grid">
+            <div class="build-row"><span>01</span><strong>SCROLL MOTION</strong><small>GSAP + ScrollTrigger</small><a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/" target="_blank" rel="noreferrer">DOCS ↗</a></div>
+            <div class="build-row"><span>02</span><strong>VIEWPORT TRIGGERS</strong><small>IntersectionObserver API</small><a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver" target="_blank" rel="noreferrer">MDN ↗</a></div>
+            <div class="build-row"><span>03</span><strong>AUDIO / VIDEO</strong><small>HTMLMediaElement API</small><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement" target="_blank" rel="noreferrer">MDN ↗</a></div>
+            <div class="build-row"><span>04</span><strong>RESPONSIVE LAYOUT</strong><small>CSS Grid + media queries</small><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank" rel="noreferrer">MDN ↗</a></div>
+          </div>
+
+          <div class="code-note">
+
+          
+          </div>
+
+          <div class="links" id="referenceLinks"></div>
+          <small class="about-note" id="aboutNote"></small>
+        </div>
+      </section>
+
+      <section class="section secret">
+        <div class="secret-inner">
+          <div class="kicker">08 / ONE LAST DOOR</div>
+          <h2>There is a part<br>I definitely wasn't<br>putting on the <em>homepage.</em></h2>
+          <button id="loreBtn" class="lore-btn">OPEN THE LORE ↗</button>
+          <small>hint: your lappy pass</small>
+        </div>
+      </section>
+    </main>
+
+    <footer><span id="footerBrand">NAME / 00.00</span><span>MADE WITH MEMORIES</span></footer>
+  </div>
+
+  <div id="peopleModal" class="overlay" aria-hidden="true">
+    <button class="close" id="peopleClose" aria-label="Close">×</button>
+    <div class="overlay-inner">
+      <div class="kicker" id="catKicker"></div>
+      <h2 id="catTitle"></h2>
+      <p id="catDesc"></p>
+      <div class="modal-gallery" id="modalGallery"></div>
+    </div>
+  </div>
+
+  <div id="pass" class="password" aria-hidden="true">
+    <div class="pass-card">
+      <button class="close" id="passClose" aria-label="Close">×</button>
+      <div class="kicker">PRIVATE ARCHIVE</div>
+      <h2>Okay.<br>Prove you're <em>him.</em></h2>
+      <p>Enter the private site passphrase. This is a fun unlock, not real security.</p>
+      <form id="passForm">
+        <input id="passInput" type="password" autocomplete="off" placeholder="••••••••">
+        <button>UNLOCK</button>
+      </form>
+      <div id="wrong" class="wrong">Nope. The archives remain classified.</div>
+    </div>
+  </div>
+
+  <div id="lore" class="overlay" aria-hidden="true">
+    <button class="close" id="loreClose" aria-label="Close">×</button>
+    <div class="overlay-inner">
+      <div class="kicker">CLASSIFIED / 001</div>
+      <h2>THE<br><em>LORE.</em></h2>
+      <p>the footage that absolutely did not make the homepage.</p>
+      <div class="modal-gallery" id="loreGallery"></div>
+    </div>
+  </div>
+
+  <script src="content/site.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

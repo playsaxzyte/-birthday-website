@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Editor backups
+*.swp
+*.swo
+
+# Local-only files
+.env
+.env.*
+
+# Generated / temporary files
+dist/
+build/
+node_modules/
