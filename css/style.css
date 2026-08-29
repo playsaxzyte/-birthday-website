@@ -125,3 +125,34 @@ main .build-row:hover {
         0 0 30px rgba(75, 145, 255, 0.25),
         0 0 65px rgba(75, 145, 255, 0.12);
 }
+.creator-credit {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+}
+
+.creator-credit a {
+    color: rgba(235, 242, 255, 0.45);
+    text-decoration: none;
+    transition:
+        color 0.45s ease,
+        text-shadow 0.45s ease,
+        opacity 0.45s ease;
+}
+
+.creator-credit a span {
+    margin-left: 0.35rem;
+    opacity: 0.65;
+}
+
+.creator-credit a:hover {
+    color: #eaf3ff;
+    text-shadow:
+        0 0 10px rgba(75, 145, 255, 0.45),
+        0 0 28px rgba(75, 145, 255, 0.18);
+}
+
+.creator-credit a:hover span {
+    opacity: 1;
+}

@@ -24,18 +24,9 @@ document.getElementById("heroTitle").innerHTML = SITE.hero.title;
 document.getElementById("heroSubtitle").innerHTML = SITE.hero.subtitle;
 document.getElementById("archiveDescription").textContent = SITE.archive.description;
 document.getElementById("thoughtDescription").textContent = SITE.thoughts.description;
-document.getElementById("aboutText").textContent = SITE.about.text;
-document.getElementById("aboutNote").textContent = SITE.about.note;
 
-const referenceLinks = document.getElementById("referenceLinks");
-SITE.about.links.forEach(link => {
-  const a = document.createElement("a");
-  a.href = link.url;
-  a.target = "_blank";
-  a.rel = "noreferrer";
-  a.textContent = link.label;
-  referenceLinks.appendChild(a);
-});
+
+
 
 function startLoader() {
   const start = performance.now();
