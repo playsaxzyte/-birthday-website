@@ -22,7 +22,23 @@ It is made to be easy to customise, even if you don't know much about coding.
 - Hover effects
 - Mobile + desktop layouts
 - GitHub Pages support
+## Preview
 
+### Desktop
+
+![Desktop preview](docs/screenshots/desktop.png)
+
+### Mobile
+
+![Mobile preview](docs/screenshots/mobile.png)
+
+### Music player
+
+![Music player](docs/screenshots/music-player.png)
+
+### Memories
+
+![Memories](docs/screenshots/memories.png)
 ---
 
 # Getting started
