@@ -724,7 +724,7 @@ The project is intentionally kept fairly simple so it can be changed without hav
 
 # Made by
 
-Axzy/
+Axzy/Apple
 
 GitHub:
 
@@ -741,5 +741,6 @@ Put in the songs that actually mean something.
 Change the text.
 
 Make the whole thing ridiculously specific to the person you're making it for.
+meow and take care lol
 
 That's kind of the point.
